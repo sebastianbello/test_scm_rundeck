@@ -1,7 +1,7 @@
 <joblist>
   <job>
     <defaultTab>summary</defaultTab>
-    <description>MODIFICACION MANUAL HECHA LOCALMENTE</description>
+    <description>MODIFICACION MANUAL HECHA LOCALMENTE CON TODO EN AUTO</description>
     <dispatch>
       <excludePrecedence>true</excludePrecedence>
       <keepgoing>false</keepgoing>
