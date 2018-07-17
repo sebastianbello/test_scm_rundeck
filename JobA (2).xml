@@ -50,6 +50,6 @@
         <exec>echo ${export.variable1}</exec>
       </command>
     </sequence>
-    <uuid>e8b90469-9513-4127-aba5-779df23592e0</uuid>
+    <uuid>e8b90469-9513-4127-aba5-779df2350000</uuid>
   </job>
 </joblist>
