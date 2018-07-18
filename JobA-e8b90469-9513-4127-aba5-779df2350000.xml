@@ -1,7 +1,7 @@
 <joblist>
   <job>
     <defaultTab>summary</defaultTab>
-    <description>MODIFICACION MANUAL HECHA EN GUI PARA JP.</description>
+    <description>MODIFICACION MANUAL HECHA EN GUI PARA EDU.</description>
     <dispatch>
       <excludePrecedence>true</excludePrecedence>
       <keepgoing>false</keepgoing>
