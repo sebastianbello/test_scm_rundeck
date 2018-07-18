@@ -1,0 +1,33 @@
+- defaultTab: summary
+  description: Imported from Git Rob Howe's canvas/salesforce sync thing without email
+  executionEnabled: true
+  id: c973a5b3-ecf5-4f80-86e7-8f54afb681a5
+  loglevel: INFO
+  name: Rob Howe2
+  nodeFilterEditable: false
+  nodefilters:
+    dispatch:
+      excludePrecedence: true
+      keepgoing: false
+      rankOrder: ascending
+      successOnEmptyNodeFilter: false
+      threadcount: '1'
+    filter: 'name: "Rundeck PHP"'
+  nodesSelectedByDefault: true
+  schedule:
+    dayofmonth:
+      day: '*'
+    month: '*'
+    time:
+      hour: '12'
+      minute: '00'
+      seconds: '0'
+    year: '*'
+  scheduleEnabled: true
+  sequence:
+    commands:
+    - description: Call Cron task
+      exec: SITE=live php /srv/www/live/source-code/kohana-cli_apps/cli_index.php salesforce_canvas_push/pulldebug/dumpsfuser
+    keepgoing: false
+    strategy: node-first
+  uuid: c973a5b3-ecf5-4f80-86e7-8f54afb681a5
