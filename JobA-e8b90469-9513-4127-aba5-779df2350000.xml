@@ -1,7 +1,7 @@
 <joblist>
   <job>
     <defaultTab>summary</defaultTab>
-    <description>MODIFICACION MANUAL HECHA LOCALMENTE CON TODO EN MANUAL (desde GIT ver 4)</description>
+    <description>MODIFICACION MANUAL HECHA EN GUI PARA JP.</description>
     <dispatch>
       <excludePrecedence>true</excludePrecedence>
       <keepgoing>false</keepgoing>
