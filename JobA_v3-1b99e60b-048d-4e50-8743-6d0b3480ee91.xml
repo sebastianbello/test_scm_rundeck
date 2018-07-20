@@ -25,7 +25,7 @@
         <exec>echo "Step 1 Job A"</exec>
       </command>
       <command>
-        <description>Capturing a Variable JobA MODIFICACION MANUAL</description>
+        <description>Capturing a Variable JobA MODIFICACION MANUAL en GIT</description>
         <exec>echo "RUNDECK:DATA:variable1=SampleOutput"</exec>
         <plugins>
           <LogFilter type='key-value-data'>
