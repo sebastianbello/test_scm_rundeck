@@ -12,7 +12,7 @@
     <executionEnabled>true</executionEnabled>
     <id>60983eea-9675-4c89-85d2-0980ef663431</id>
     <loglevel>INFO</loglevel>
-    <name>JobA_v2</name>
+    <name>JobA_v2_MOD_manual</name>
     <nodeFilterEditable>false</nodeFilterEditable>
     <nodefilters>
       <filter>.*</filter>
