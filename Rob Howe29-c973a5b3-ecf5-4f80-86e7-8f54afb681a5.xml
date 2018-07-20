@@ -1,0 +1,30 @@
+<joblist>
+  <job>
+    <defaultTab>summary</defaultTab>
+    <description>Imported from Git Rob Howe's canvas/salesforce sync thing without email MODIFICADO, AGAIN, DE NUEVO, OTA E</description>
+    <dispatch>
+      <excludePrecedence>true</excludePrecedence>
+      <keepgoing>false</keepgoing>
+      <rankOrder>ascending</rankOrder>
+      <successOnEmptyNodeFilter>false</successOnEmptyNodeFilter>
+      <threadcount>1</threadcount>
+    </dispatch>
+    <executionEnabled>true</executionEnabled>
+    <id>c973a5b3-ecf5-4f80-86e7-8f54afb681a5</id>
+    <loglevel>INFO</loglevel>
+    <name>Rob Howe29</name>
+    <nodeFilterEditable>false</nodeFilterEditable>
+    <nodefilters>
+      <filter>name: "Rundeck PHP"</filter>
+    </nodefilters>
+    <nodesSelectedByDefault>true</nodesSelectedByDefault>
+    <scheduleEnabled>true</scheduleEnabled>
+    <sequence keepgoing='false' strategy='node-first'>
+      <command>
+        <description>Call Cron task</description>
+        <exec>SITE=live php /srv/www/live/source-code/kohana-cli_apps/cli_index.php salesforce_canvas_push/pulldebug/dumpsfuser</exec>
+      </command>
+    </sequence>
+    <uuid>c973a5b3-ecf5-4f80-86e7-8f54afb681a5</uuid>
+  </job>
+</joblist>
