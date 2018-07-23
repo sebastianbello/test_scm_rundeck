@@ -1,0 +1,55 @@
+<joblist>
+  <job>
+    <defaultTab>summary</defaultTab>
+    <description>Copia JOBA - desde GIT</description>
+    <dispatch>
+      <excludePrecedence>true</excludePrecedence>
+      <keepgoing>false</keepgoing>
+      <rankOrder>ascending</rankOrder>
+      <successOnEmptyNodeFilter>false</successOnEmptyNodeFilter>
+      <threadcount>1</threadcount>
+    </dispatch>
+    <executionEnabled>true</executionEnabled>
+    <id>60983eea-9675-4c89-85d2-0980ef000031</id>
+    <loglevel>INFO</loglevel>
+    <name>JobA_v2_MOD_manual</name>
+    <nodeFilterEditable>false</nodeFilterEditable>
+    <nodefilters>
+      <filter>.*</filter>
+    </nodefilters>
+    <nodesSelectedByDefault>true</nodesSelectedByDefault>
+    <scheduleEnabled>true</scheduleEnabled>
+    <sequence keepgoing='false' strategy='node-first'>
+      <command>
+        <description>Step1</description>
+        <exec>echo "Step 1 Job A"</exec>
+      </command>
+      <command>
+        <description>Capturing a Variable JobA</description>
+        <exec>echo "RUNDECK:DATA:variable1=SampleOutput"</exec>
+        <plugins>
+          <LogFilter type='key-value-data'>
+            <config>
+              <logData>true</logData>
+              <regex>^RUNDECK:DATA:(.+?)\s*=\s*(.+)$</regex>
+            </config>
+          </LogFilter>
+        </plugins>
+      </command>
+      <command>
+        <description>Creates a Global Variable  and assigns captured value</description>
+        <step-plugin type='export-var'>
+          <configuration>
+            <entry key='export' value='variable1' />
+            <entry key='group' value='export' />
+            <entry key='value' value='${data.variable1@localhost}' />
+          </configuration>
+        </step-plugin>
+      </command>
+      <command>
+        <exec>echo ${export.variable1}</exec>
+      </command>
+    </sequence>
+    <uuid>60983eea-9675-4c89-85d2-0980ef000031</uuid>
+  </job>
+</joblist>
