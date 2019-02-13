@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <project>
+  
   <node name="SAMPLE_NODE1" 
         description="Rundeck server node" 
         tags="" 
         hostname="localhost" 
-        osArch="amd64" osFamily="unix" osName="Linux" osVersion="4.13.0-39-generic" username="sebastian"/>
+        osArch="amd64" osFamily="unix" osName="Linux" osVersion="4.13.0-39-generic" 
+        username="sebastian"/>
   
   <node name="SAMPLE_NODE2" 
         description="Rundeck server node clone" 
         tags="" 
         hostname="192.168.1.86" 
         variable_Y="value2" 
-        osArch="amd64" osFamily="unix" osName="Linux" osVersion="4.13.0-39-generic" 
-        ssh-authentication="password" ssh-password-storage-path="keys/PassLocalSebastian" username="sebastian"/>
+        osArch="amd64" osFamily="unix" osName="Linux" osVersion="4.13.0-39-generic"
+        username="sebastian"/>
   
 </project>
