@@ -12,7 +12,7 @@
   <node name="SAMPLE_NODE2" 
         description="Rundeck server node clone" 
         tags="" 
-        hostname="192.168.1.86" 
+        hostname="192.168.56.186" 
         variable_Y="value2" 
         osArch="amd64" osFamily="unix" osName="Linux" osVersion="4.13.0-39-generic"
         username="sebastian"/>
